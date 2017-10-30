@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>HelloServlet 요청</h2>
+	<a href="http://127.0.0.1:8088/HelloWeb/hello">hello</a><br>
+	<a href="hello">hello 서블릿 - 상대경로</a><br>
+	<a href="/HelloWeb/hello">Hello 서블릿으로 이동 - 절대경로</a>
+	
+	
+	<h2>CounterServlet2 호출</h2>
+	<a href="http://127.0.0.1:8088/HelloWeb/counter2">Counter2 - 전체경로</a><br>
+	<a href="HelloWeb/counter2">Counter2 - 절대경로</a><br>
+	<a href="counter2">Counter2 - 상대경로</a>
+	
+	
+	<h2>lifecycle 서블릿 호출</h2>
+	<a href="http://127.0.0.1:8088/HelloWeb/lifecycleExam">LifecycleServlet - GET 호출</a>
+	<br>
+	<form action="http://127.0.0.1:8088/HelloWeb/lifecycleExam"
+		method="POST">
+		<button>LifecycleServlet - POST 요청</button>
+	</form>
+
+</body>
+</html>
